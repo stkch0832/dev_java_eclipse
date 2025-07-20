@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  java-dev:
+    build: .
+    volumes:
+      - ./dev_container:/workspace
+    ports:
+      - "5005:5005"  # デバッグ用
+    tty: true
